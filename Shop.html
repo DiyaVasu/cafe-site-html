@@ -1,0 +1,214 @@
+<!doctype html>
+<!-- this is the html start-->
+<html>
+<!-- this is the head start-->
+      <head>
+<!-- this is the title start-->
+      <title>
+         Shop
+      </title>
+<!-- this is the title end-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="cafe.js"></script>
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+            <link rel="stylesheet"  href="css/style.css">
+<!-- this is the meta tag end-->
+<!-- this is the style start-->
+      <style type="text/css">
+ /* start of the nav bar */
+     #navbar {
+        overflow: hidden;
+        background-color: #87c232;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #navbar a:hover {
+        background-color: #474a4f;
+        color: white;
+      }
+
+      #navbar a.active {
+        background-color: #618930;
+        color: white;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+/* end of the nav bar */
+/* start of the column */
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* end of the column */
+/* for the btn */
+        .button {
+          border-color: #bfc0c1;
+          background-color: #474a4f;
+          color: #ffffff;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 16px;
+      }
+      .button:hover {
+          background-color: #222629;
+      }
+      /* end of the btn */
+    </style>
+<!-- this is the body start-->
+  <body bgcolor="#222629" id="maincontainer">
+    <img src="cafe12.png" style="width:100%; height: auto;">
+
+            <!-- this is the start nav bar-->
+
+            <div id="navbar">
+              <a class="active" href="Home.html">Home</a>
+              <a href="Reservation.html">Reservation</a>
+              <a href="Menu.html">Menu</a>
+              <a href="Blog.html">Blog</a>
+              <a href="About.html">About</a>
+              <a href="Shop.html">Shop</a>
+              <a href="Contact.html">Contacts</a>
+            </div>
+
+            <script>
+               window.onscroll = function() {myFunction()};
+
+               var navbar = document.getElementById("navbar");
+               var sticky = navbar.offsetTop;
+
+               function myFunction() {
+                 if (window.pageYOffset >= sticky) {
+                   navbar.classList.add("sticky")
+                 } else {
+                   navbar.classList.remove("sticky");
+                 }
+               }
+            </script>
+<!-- this is the nav bar end-->
+
+<!-- the start of column 1 -->
+  <div class="column" align="center">
+
+    <img src="Cappuccino.jpg" style="width:200px; height:200px;">
+    <p style="color: #ffffff; font-size:1.2vw; font-family: Roboto;">CAPPUCCINO &nbsp&nbsp&nbsp $14.00 </p>
+    <p style="color: #6a6e71; font-size: 1vw;">
+    A cappuccino is an espresso-based coffee drink that originated in Italy, and is traditionally prepared with double espresso, and steamed milk foam.
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Add to cart</button></p>
+
+    <img src="ESPRESSO.jpg" style="width:200px; height:200px;">
+    <p style="color: #ffffff; font-size:1.2vw; font-family: Roboto;">ESPRESSO &nbsp&nbsp&nbsp $14.00 </p>
+    <p style="color: #6a6e71; font-size: 1vw;">
+    Espresso is coffee brewed by expressing or forcing a small amount of nearly boiling water under pressure through finely ground coffee beans. 
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Add to cart</button></p>
+
+    <img src="AMERICANO.jpg" style="width:200px; height:200px;">
+    <p style="color: #ffffff; font-size:1.2vw; font-family: Roboto;">AMERICANO &nbsp&nbsp&nbsp $14.00 </p>
+    <p style="color: #6a6e71; font-size: 1vw;">
+    Caffè Americano or Americano is a type of coffee drink prepared by diluting an espresso with hot water.
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Add to cart</button></p>
+
+  </div>
+<!-- the end of column 1 -->
+
+<!-- the start of column 2 -->
+  <div class="column" align="center">
+    <img src="BLACK COFFEE.jpg" style="width:200px; height:200px;">
+    <p style="color: #ffffff; font-size:1.2vw; font-family: Roboto;">BLACK COFFEE &nbsp&nbsp&nbsp $14.00 </p>
+    <p style="color: #6a6e71; font-size: 1vw;">
+    Black Coffee, it is a coffee recipe which does not involve any amount of milk or cream. In short, it does not mix any dairy substitute during the processing.
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Add to cart</button></p>
+
+    <img src="CAFÉ LATTE.jpg" style="width:200px; height:200px;">
+    <p style="color: #ffffff; font-size:1.2vw; font-family: Roboto;">CAFÉ LATTE &nbsp&nbsp&nbsp $14.00 </p>
+    <p style="color: #6a6e71; font-size: 1vw;">
+    A latte is a coffee drink made with espresso and steamed milk.
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Add to cart</button></p>
+
+    <img src="TURKISH COFFEE.jpg" style="width:200px; height:200px;">
+    <p style="color: #ffffff; font-size:1.2vw; font-family: Roboto;">TURKISH COFFEE &nbsp&nbsp&nbsp $14.00 </p>
+    <p style="color: #6a6e71; font-size: 1vw;">
+    Turkish coffee is a method of preparing very finely ground unfiltered coffee. The same method is used in many Middle Eastern and Southeastern European countries.
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Add to cart</button></p>
+  </div>
+<!-- the end of column 2 -->
+
+<!-- the start of column 2 -->
+  <div class="column" align="center">
+    <img src="Flat White.jpg" style="width:200px; height:200px;">
+    <p style="color: #ffffff; font-size:1.2vw; font-family: Roboto;">FLAT WHITE &nbsp&nbsp&nbsp $14.00 </p>
+    <p style="color: #6a6e71; font-size: 1vw; font-family: Roboto;">
+    A flat white is an espresso-based coffee drink consisting of espresso with microfoam (steamed milk with small, fine bubbles with a glossy or velvety consistency). 
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Add to cart</button></p>
+
+    <img src="CAFÉ MOCHA.jpg" style="width:200px; height:200px;">
+    <p style="color: #ffffff; font-size:1.2vw; font-family: Roboto;">CAFÉ MOCHA &nbsp&nbsp&nbsp $14.00 </p>
+    <p style="color: #6a6e71; font-size: 1vw; font-family: Roboto;">
+    A caffè mocha, also called mocaccino, is a chocolate-flavored variant of a caffè latte.
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Add to cart</button></p>
+
+    <img src="IRISH COFFEE.jpg" style="width:200px; height:200px;">
+    <p style="color: #ffffff; font-size:1.2vw; font-family: Roboto;">IRISH COFFEE &nbsp&nbsp&nbsp $14.00 </p>
+    <p style="color: #6a6e71; font-size: 1vw; font-family: Roboto;">
+    Irish coffee is a cocktail consisting of hot coffee, Irish whiskey, and sugar stirred, and topped with thick cream. 
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Add to cart</button></p>
+  </div>
+<!-- the end of column 2 -->
+</body>
+<!-- start of footer-->
+         <footer>       
+           
+         </footer>
+<!-- end of footer-->
+<!-- this is the html end-->
+</html>

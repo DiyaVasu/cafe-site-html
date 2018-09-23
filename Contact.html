@@ -1,0 +1,168 @@
+<!doctype html>
+<!-- this is the html start-->
+<html>
+<!-- this is the head start-->
+      <head>
+<!-- this is the title start-->
+      <title>
+         Contact
+      </title>
+<!-- this is the title end-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="cafe.js"></script>
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+            <link rel="stylesheet"  href="css/style.css">
+<!-- this is the meta tag end-->
+<!-- this is the style start-->
+      <style type="text/css">
+ /* start of the nav bar */
+     #navbar {
+        overflow: hidden;
+        background-color: #87c232;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #navbar a:hover {
+        background-color: #474a4f;
+        color: white;
+      }
+
+      #navbar a.active {
+        background-color: #618930;
+        color: white;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+/* end of the nav bar */
+/* for the btn */
+       .button {
+          border-color: #bfc0c1;
+          background-color: #474a4f;
+          color: #ffffff;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 16px;
+      }
+      .button:hover {
+          background-color: #222629;
+      }
+      /* end of the btn */
+      * {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.container {
+    width: 50%;
+    border-radius: 5px;
+    background-color: #222629;
+    padding: 20px;
+}
+ </style>
+<!-- this is the body start-->
+  <body bgcolor="#222629" id="maincontainer">
+    <img src="cafe14.png" style="width:100%; height: auto;">
+
+            <!-- this is the start nav bar-->
+
+            <div id="navbar">
+              <a class="active" href="Home.html">Home</a>
+              <a href="Reservation.html">Reservation</a>
+              <a href="Menu.html">Menu</a>
+              <a href="Blog.html">Blog</a>
+              <a href="About.html">About</a>
+              <a href="Shop.html">Shop</a>
+              <a href="Contact.html">Contact</a>
+            </div>
+
+            <script>
+               window.onscroll = function() {myFunction()};
+
+               var navbar = document.getElementById("navbar");
+               var sticky = navbar.offsetTop;
+
+               function myFunction() {
+                 if (window.pageYOffset >= sticky) {
+                   navbar.classList.add("sticky")
+                 } else {
+                   navbar.classList.remove("sticky");
+                 }
+               }
+            </script>
+<!-- this is the nav bar end-->
+    <div align="center">
+    <p style="color: #87c232; font-size:2vw; font-family: Roboto;">GET IN TOUCH</p>
+    <p style="color: #6a6e71; font-size: 1vw; font-family: Roboto;">
+    Every Monday, Tuesday and Wednesday evening, we’re offering groups of 10 or more that book an area in our bar a <br>complimentary bottle of Champagne.<br>
+    Open hours: 8.00-18.00 Mon-Sat<br>
+    Call our reservations team on (027) 8338 145 for more information.
+    </p>
+    <p align="center" style="font-family: Roboto; text-align: center;"><button class="button" href="#">Add to cart</button></p>
+    </div>
+
+    <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+
+<div align="center">
+    <p style="color: #87c232; font-size:2vw; font-family: Roboto;">FOLLOW US</p>
+    <a href="#"><img src="social icons.png"></a>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname" style="color: #6a6e71; font-family: Roboto;">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname" style="color:#6a6e71; font-family: Roboto;">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country" style="color: #6a6e71; font-family: Roboto;">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="subject" style="color: #6a6e71; font-family: Roboto;">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <p align="center" style="font-family: Roboto; text-align: center;">
+              <button class="button">Submit</button>
+            </p>
+
+        </form>
+    </div>
+</div>    

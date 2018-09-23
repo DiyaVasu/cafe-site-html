@@ -1,0 +1,167 @@
+<!doctype html>
+<!-- this is the html start-->
+<html>
+<!-- this is the head start-->
+      <head>
+<!-- this is the title start-->
+      <title>
+         About
+      </title>
+<!-- this is the title end-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+            <link rel="stylesheet"  href="css/style.css">
+<!-- this is the meta tag end-->
+<!-- this is the style start-->
+      <style type="text/css">
+ /* start of the nav bar */
+     #navbar {
+        overflow: hidden;
+        background-color: #87c232;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #navbar a:hover {
+        background-color: #474a4f;
+        color: white;
+      }
+
+      #navbar a.active {
+        background-color: #618930;
+        color: white;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+/* end of the nav bar */
+/* for the btn */
+        .button {
+          border-color: #bfc0c1;
+          background-color: #474a4f;
+          color: #ffffff;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 16px;
+      }
+      .button:hover {
+          background-color: #222629;
+      }
+/* end of btn */    
+body{
+  font-family: Roboto;
+  margin:0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+</style>
+<!-- this is the body start-->
+  <body bgcolor="#222629" id="maincontainer">
+ <img src="cafe11.png" style="width:100%; height: auto;">
+
+            <!-- this is the start nav bar-->
+
+            <div id="navbar">
+              <a class="active" href="Home.html">Home</a>
+              <a href="Reservation.html">Reservation</a>
+              <a href="Menu.html">Menu</a>
+              <a href="Blog.html">Blog</a>
+              <a href="About.html">About</a>
+              <a href="Shop.html">Shop</a>
+              <a href="Contact.html">Contacts</a>
+            </div>
+
+            <script>
+               window.onscroll = function() {myFunction()};
+
+               var navbar = document.getElementById("navbar");
+               var sticky = navbar.offsetTop;
+
+               function myFunction() {
+                 if (window.pageYOffset >= sticky) {
+                   navbar.classList.add("sticky")
+                 } else {
+                   navbar.classList.remove("sticky");
+                 }
+               }
+            </script>
+<!-- this is the nav bar end-->
+
+    <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">HELLO! WE ARE HOT COFFEE!</p>
+    <p style="color: #6a6e71; font-size: 1.2vw;  font-family: Roboto; text-align: center;">Donec non cursus sapien, vel aliquet dui cum sociis natoque penatibus et magnis dis parturient montes <br> nascetur ridiculus muslorem. Donec non cursus sapien, vel aliquet dui cum sociis natoque penatibus <br> magnis dis parturient montes nascetur ridiculus muslorem.</p>
+     <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">Purchase</button></p>
+
+    <img src="cafe4.png" style="width: 100%; height: auto;">
+
+    <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">OUR INTERESTING FACTS</p>
+    <p style="color: #6a6e71; font-size: 1.2vw;  font-family: Roboto; text-align: center;">A coffee ceremony is a ritualised form of making and drinking coffee. The coffee ceremony is one of <br> the most recognizable parts of Ethiopian culture and Eritrean culture. Coffee is offered when visiting <br> friends, during festivities, or as a daily staple of life.</p>
+
+    <table align="center" cellpadding="40px;">
+    <tr>
+               <td>
+                  <img src="cake.png" style="width:120px; height:120px;">
+                  <p style="color: #6a6e71; font-size: 1.2vw;  font-family: Roboto; text-align: center;"><b>TICKETS ANSWERED</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                  <p style="color: #87c232; font-size: 2vw;  font-family: Times New Roman; text-align: center;">3562</p>
+               </td>
+               <td>
+                 <img src="weight.png" style="width:120px; height:120px;">
+                  <p style="color: #6a6e71; font-size: 1.2vw;  font-family: Roboto; text-align: center;"><b>GOOGLE FONTS</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                  <p style="color: #87c232; font-size: 2vw;  font-family: Times New Roman; text-align: center;">699</p>
+               </td>
+               <td>
+                  <img src="coffee.png" style="width:120px; height:120px;">
+                  <p style="color: #6a6e71; font-size: 1.2vw;  font-family: Roboto; text-align: center;"><b>FEATURES ADDED</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                  <p style="color: #87c232; font-size: 2vw;  font-family: Times New Roman; text-align: center;">256</p>
+               </td>
+               <td>
+                  <img src="cupcake.png" style="width:120px; height:120px;">
+                  <p style="color: #6a6e71; font-size: 1.5vw;  font-family: Roboto; text-align: center;"><b>THEME USERS</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                  <p style="color: #87c232; font-size: 2vw;  font-family: Times New Roman; text-align: center;">4573</p>
+               </td>
+            </tr>
+            <p style="font-family: Roboto; text-align: center;"><button class="button">Purchase</button></p>
+         </table>
+              
+</body>
+<!-- start of footer-->
+         <footer>       
+            <img src="cafe7.png" style="width: 100%; height: auto;">
+         </footer>
+<!-- end of footer-->
+<!-- this is the html end-->
+</html>

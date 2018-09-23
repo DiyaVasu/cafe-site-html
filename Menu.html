@@ -1,0 +1,314 @@
+<!doctype html>
+<!-- this is the html start-->
+<html>
+<!-- this is the head start-->
+      <head>
+<!-- this is the title start-->
+      <title>
+         Menu
+      </title>
+<!-- this is the title end-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+            <link rel="stylesheet"  href="css/style.css">
+             
+<!-- this is the meta tag end-->
+            <script
+               src="https://code.jquery.com/jquery-3.2.1.js"
+               integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+               crossorigin="anonymous">
+            </script>
+            <script src="http://malsup.github.io/jquery.cycle.all.js"></script>	
+<!-- this is the style start-->
+      <style type="text/css">
+ /* start of the nav bar */
+     #navbar {
+        overflow: hidden;
+        background-color: #87c232;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #navbar a:hover {
+        background-color: #474a4f;
+        color: white;
+      }
+
+      #navbar a.active {
+        background-color: #618930;
+        color: white;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+/* end of the nav bar */
+.button {
+    border-color: #87c232;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+  </style>
+<!-- this is the style end-->
+<!-- this is the head end-->
+      </head>
+<!-- this is the body start-->
+         <body bgcolor="#222629" id="maincontainer">
+ <img src="cafe9.png" style="width:100%; height: auto;">
+
+            <!-- this is the nav bar-->
+
+            <div id="navbar">
+              <a class="active" href="Home.html">Home</a>
+              <a href="Reservation.html">Reservation</a>
+              <a href="Menu.html">Menu</a>
+              <a href="Blog.html">Blog</a>
+              <a href="About.html">About</a>
+              <a href="Shop.html">Shop</a>
+              <a href="Contact.html">Contacts</a>
+            </div>
+
+            <script>
+               window.onscroll = function() {myFunction()};
+
+               var navbar = document.getElementById("navbar");
+               var sticky = navbar.offsetTop;
+
+               function myFunction() {
+                 if (window.pageYOffset >= sticky) {
+                   navbar.classList.add("sticky")
+                 } else {
+                   navbar.classList.remove("sticky");
+                 }
+               }
+            </script>
+<!-- this is the nav bar end-->
+
+    <!-- start of menu -->
+    <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">BON APPETIT</p>
+    <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+    <p style="color: #6a6e71; font-size: 1.2vw;  font-family: Roboto; text-align: center;">Duis sit amet lacus maximus quam bibendum ultrices. Etiam fermentum id turpis viverra gravida. Phasellus fringilla sapien <br> eu maximus. Pellentesque nibh risus, ultrices sit amet efficitur eu, ut tortor.</p>
+    <!-- end of menu -->
+
+    <!-- start of the nav bar -->
+    <p align="center">
+      <a href="#Espresso" class="button">Espresso</a>
+      <a href="#Specality Drinks" class="button">Specality Drinks</a>
+      <a href="#Bakery" class="button">Bakery</a>
+      <a href="#Juice & Smoothies" class="button">Juice  & Smoothies</a>
+    </p>  
+    <!-- end of the nav bar -->
+
+    <!--start of Espresso-->
+    <p style="color: #87c232; font-size: 3vw;  font-family: Roboto; text-align: center;">
+      Espresso
+    </p>
+    <table align="center" cellpadding="10px;" id="Espresso">
+      <tr>
+        <td style="color: #6a6e71;">
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+          <img src="Espresso_Americano.jpg" style="width:90px; height:90px;">  
+          Espresso/Americano &nbsp&nbsp&nbsp $2.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+          <img src="macchiato.jpg" style="width:90px; height:90px;">  
+          macchiato &nbsp&nbsp&nbsp $2.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+      <tr>  
+        <td style="color: #6a6e71;">
+          <img src="Latte.jpg" style="width:90px; height:90px;">  
+          Latte &nbsp&nbsp&nbsp $3.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <img src="Capuccino.jpg" style="width:90px; height:90px;">  
+          Capuccino &nbsp&nbsp&nbsp $3.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+      <tr>  
+        <td style="color: #6a6e71;">
+          <img src="Mocha.jpg" style="width:90px; height:90px;">  
+          Mocha &nbsp&nbsp&nbsp $4.00
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <img src="White Mocha.jpg" style="width:90px; height:90px;">  
+          White Mocha &nbsp&nbsp&nbsp $4.25
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="color: #6a6e71;">
+          <img src="Extra Shot.jpg" style="width:90px; height:90px;">  
+          Extra Shot &nbsp&nbsp&nbsp $1.00
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <img src="Flat White.jpg" style="width:90px; height:90px;">  
+          Flat White &nbsp&nbsp&nbsp $4.00
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+    </table>
+    <!-- end of Espresso-->
+
+    <!--start of Specality Drinks-->
+     <p style="color: #87c232; font-size: 3vw;  font-family: Roboto; text-align: center;">
+      Specality Drinks
+    </p>
+    <table align="center" cellpadding="10px;" id="Specality Drinks">
+      <tr>
+        <td style="color: #6a6e71;">
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+          <img src="Premium Loose Leaf Tea.jpg" style="width:90px; height:90px;">  
+          Premium Loose Leaf Tea &nbsp&nbsp&nbsp $2.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+          <img src="Tea Latte.jpg" style="width:90px; height:90px;">  
+          Tea Latte &nbsp&nbsp&nbsp $3.00
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+      <tr>  
+        <td style="color: #6a6e71;">
+          <img src="Chai Latte.jpg" style="width:90px; height:90px;">  
+          Chai Latte &nbsp&nbsp&nbsp $3.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <img src="Tiger Eye.jpg" style="width:90px; height:90px;">  
+          Tiger Eye &nbsp&nbsp&nbsp $4.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+      <tr>  
+        <td style="color: #6a6e71;">
+          <img src="Raspberry Tea.jpg" style="width:90px; height:90px;">  
+          Raspberry Tea &nbsp&nbsp&nbsp $4.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+      </tr>
+    </table>
+    <!-- end of Specality Drinks-->
+
+    <!--start of Bakery-->
+     <p style="color: #87c232; font-size: 3vw;  font-family: Roboto; text-align: center;">
+     Bakery
+    </p>
+    <table align="center" cellpadding="10px;" id="Bakery">
+      <tr>
+        <td style="color: #6a6e71;">
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+          <img src="Bagel.jpg" style="width:90px; height:90px;">  
+          Bagel &nbsp&nbsp&nbsp $3.25
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+          <img src="Raspberry---Cream-Cheese-Pastries_exps152919_THCA143053B010_31_5b_RMS.jpg" style="width:90px; height:90px;">  
+          Pastries &nbsp&nbsp&nbsp $3.25
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+      <tr>  
+        <td style="color: #6a6e71;">
+          <img src="Muffins.jpg" style="width:90px; height:90px;">  
+          Muffins &nbsp&nbsp&nbsp $2.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <img src="Biscotto.jpg" style="width:90px; height:90px;">  
+          Biscotto &nbsp&nbsp&nbsp $1.75
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+    </table>
+    <!-- end of Bakery-->
+
+     <!--start of Juice & Smoothies-->
+     <p style="color: #87c232; font-size: 3vw;  font-family: Roboto; text-align: center;">
+     Juice & Smoothies
+    </p>
+    <table align="center" cellpadding="10px;" id="Juice & Smoothies">
+      <tr>
+        <td style="color: #6a6e71;">
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+          <img src="Italian Soda.jpg" style="width:90px; height:90px;">  
+          Italian Soda &nbsp&nbsp&nbsp $3.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+          <img src="Fresh Squeezed Orange Juice.jpg" style="width:90px; height:90px;">  
+          Fresh Squeezed Orange Juice &nbsp&nbsp&nbsp $3.00
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+      <tr>  
+        <td style="color: #6a6e71;">
+          <img src="Strawberry Lemonade.jpg" style="width:90px; height:90px;">  
+          Strawberry Lemonade &nbsp&nbsp&nbsp $3.00
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+        <td style="color: #6a6e71;">
+          <img src="Fruit Smoothie.jpg" style="width:90px; height:90px;">  
+          Fruit Smoothie &nbsp&nbsp&nbsp $4.50
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td>
+      </tr>
+      <tr>  
+        <td style="color: #6a6e71;">
+          <img src="Bottled Juice.jpg" style="width:90px; height:90px;">  
+          Bottled Juice &nbsp&nbsp&nbsp $2.25
+          <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+        </td> 
+      </tr>  
+    </table>
+    <!-- end of Juice & Smoothies-->
+</body>
+
+
+<!-- start of footer-->
+         <footer>       
+            <img src="cafe7.png" style="width: 100%; height: auto;">
+         </footer>
+<!-- end of footer-->
+
+<!-- this is the html end-->
+</html>

@@ -1,0 +1,368 @@
+<!doctype html>
+<!-- this is the html start-->
+<html>
+<!-- this is the head start-->
+      <head>
+<!-- this is the title start-->
+      <title>
+         Cafe Mocha
+      </title>
+<!-- this is the title end-->
+<!-- this is the meta tag start-->  
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="css/style.css">
+<!-- this is the meta tag end-->	
+<!-- this is the style start-->
+      <style type="text/css">
+
+      /* for the body */
+      body{
+         width: 100%;
+         height: auto;
+      }
+      /* end of the body */
+
+      /* for the border */
+      * {
+             box-sizing: border-box;
+         }
+      /* end of the boreder */  
+
+      /* for the btn */
+        .button {
+          border-color: #bfc0c1;
+          background-color: #474a4f;
+          color: #ffffff;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 16px;
+      }
+      .button:hover {
+          background-color: #222629;
+      }
+      /* end of the btn */
+
+     /* start of the nav bar */
+     #navbar {
+        overflow: hidden;
+        background-color: #87c232;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #navbar a:hover {
+        background-color: #474a4f;
+        color: white;
+      }
+
+      #navbar a.active {
+        background-color: #618930;
+        color: white;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+/* end of the nav bar */
+
+      /* start banner image slider */
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: #87c232;
+      }
+
+      /* Caption text */
+      .text {
+        font-family: Roboto;
+        color: #222629;
+        font-size: 20px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #6a6e71;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #87c232;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+      /* end of the banner image*/
+      /* start of the video */
+      video {
+       width: 100%;
+       height: auto;
+      }
+      /* end of the video */
+      </style>
+<!-- this is the style end-->
+<!-- this is the head end-->
+      </head>
+<!-- this is the body start-->
+         <body bgcolor="#222629" id="maincontainer">
+
+            <!-- this is the banner slider-->
+
+         <div class="slideshow-container"  style="padding-top: 50px;">
+
+         <div class="mySlides fade">
+           <img src="cafe.png" style="width:100%">
+           <div class="text"> Its always Coffee Time..</div>
+         </div>
+
+         <div class="mySlides fade">
+           <img src="cafe5.png" style="width:100%">
+           <div class="text">Wake up and smell coffee..</div>
+         </div>
+
+         <div class="mySlides fade">
+           <img src="cafe6.png" style="width:100%">
+           <div class="text">Life begins after coffee</div>
+         </div>
+
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+         </div>
+         <br>
+
+         <div style="text-align:center">
+           <span class="dot" onclick="currentSlide(1)"></span> 
+           <span class="dot" onclick="currentSlide(2)"></span> 
+           <span class="dot" onclick="currentSlide(3)"></span> 
+         </div>
+
+         <script>
+         var slideIndex = 1;
+         showSlides(slideIndex);
+
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}    
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";  
+           dots[slideIndex-1].className += " active";
+         }
+         </script>
+<!-- this is the end of banner slider-->
+
+<!-- this is the nav bar-->
+
+            <div id="navbar">
+              <a class="active" href="Home.html">Home</a>
+              <a href="Reservation.html">Reservation</a>
+              <a href="Menu.html">Menu</a>
+              <a href="Blog.html">Blog</a>
+              <a href="About.html">About</a>
+              <a href="Shop.html">Shop</a>
+              <a href="Contact.html">Contacts</a>
+            </div>
+
+            <script>
+               window.onscroll = function() {myFunction()};
+
+               var navbar = document.getElementById("navbar");
+               var sticky = navbar.offsetTop;
+
+               function myFunction() {
+                 if (window.pageYOffset >= sticky) {
+                   navbar.classList.add("sticky")
+                 } else {
+                   navbar.classList.remove("sticky");
+                 }
+               }
+            </script>
+<!-- this is the nav bar end-->
+
+         <!-- start of menu -->
+         <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">Welcome to our Coffee House</p>
+         <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+         <p style="color: #6a6e71; font-size: 1.2vw;  font-family: Roboto; text-align: center;">From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the coffeehouse provides patrons with <br>
+          a place to congregate, talk, read, write, entertain one another, or pass the time,<br>
+         whether individually or in small groups.</p>
+         <p align="center" style="font-family: Roboto; text-align: center;">
+            <button class="button">Make A Reservation</button>
+         </p>
+         <!-- end of menu -->
+
+         <!-- start of banner2-->
+         <p style="padding-top: 50px;"><img src="cafe1.png" style="width: 100%; height: auto;"></p>
+         <!-- end of banner2-->
+
+         <!-- start of menu -->
+         <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">Coffee Menu</p>
+         <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+         <p style="color: #6a6e71; font-size: 1.2vw;  font-family: Roboto; text-align: center;">“I’m looking to nature for my inspiration. Letting the natural produce speak. There’s so much out there, so
+         much elegance and beauty.” – PETER GILMORE</p>
+         <p align="center" style="font-family: Roboto; text-align: center;"><button class="button">View Full Menu</button></p>
+         <!-- end of menu -->
+
+         <!-- start of menu -->
+         <p style="padding-top: 50px;">
+            <img src="cafe2.png" style="width: 100%; height: auto;">
+            <img src="cafe3.png" style="width: 100%; height: auto;">
+            <img src="cafe4.png" style="width: 100%; height: auto;">
+         </p>
+         <!-- end of menu -->
+
+         <!-- start of menu -->
+         <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">Most read articles</p>
+         <p align="center"><img src="bar.png" style="width: 400px; height: 1px;"></p>
+         <table align="center">
+            <div align="center">
+               <iframe width="750" height="500" src="https://www.youtube.com/embed/nmS9g97zUzE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <tr>
+               <td>
+                  <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">Cooking</p>
+                  <p style="color: #6a6e71; font-size: 1.4vw;  font-family: Roboto; text-align: center;"><b>Trend Spotting
+                  French Tart</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                  <p style="color: #474a4f; font-size: 1.2vw;  font-family: Roboto; text-align: center;">POSTED FEB 15, 2016</p>
+               </td>
+               <td>
+                  <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">Cooking</p>
+                  <p style="color: #6a6e71; font-size: 1.4vw;  font-family: Roboto; text-align: center;"><b>Secret of Making Smoked Pork</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                  <p style="color: #474a4f; font-size: 1.2vw;  font-family: Roboto; text-align: center;">POSTED FEB 15, 2016</p>
+               </td>
+               <td>
+                  <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">Cooking</p>
+                  <p style="color: #6a6e71; font-size: 1.4vw;  font-family: Roboto; text-align: center;"><b>Life is a 
+                  Combination</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                  <p style="color: #474a4f; font-size: 1.2vw;  font-family: Roboto; text-align: center;">POSTED FEB 15, 2016</p>
+               </td>
+               <td>
+                  <p style="color: #87c232; font-size: 2vw;  font-family: Roboto; text-align: center;">Cooking</p>
+                  <p style="color: #6a6e71; font-size: 1.4vw;  font-family: Roboto; text-align: center;"><b>Amazing Dining
+                  Rooms</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                  <p style="color: #474a4f; font-size: 1.2vw;  font-family: Roboto; text-align: center;">POSTED FEB 15, 2016</p>
+               </td>
+            </tr>
+         </table>
+         <!-- end of menu -->
+
+         </body>   
+<!-- end of body-->
+<!-- start of footer-->
+         <footer>	      
+            <img src="cafe7.png" style="width: 100%; height: auto;">
+         </footer>
+<!-- end of footer-->
+<!-- this is the html end-->
+</html>
